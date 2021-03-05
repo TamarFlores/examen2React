@@ -11,7 +11,7 @@ class ToDo extends React.Component {
             done: this.props.done
         }
     }
-
+// Realizar Cambio de estado de las tareas
     cambioEstado(id){
         var request = new Request('put', UPDATE_TAREA_DONE + '/' + id, {}, (response) => {
           if(response.status == 200){
